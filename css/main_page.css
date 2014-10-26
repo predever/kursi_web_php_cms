@@ -1,0 +1,177 @@
+/* top header section */
+#header {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50px;
+}
+
+/* header content in order to make the fixed possition possible */
+#header_content {
+	width: 600px;
+	position: fixed;
+	background-color: #000000;
+}
+
+#base {
+	width: 600px;
+	background-color: #EEEEEE;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main_logo {
+	width: 70px;
+	height: 40px;
+	background-color: #00238C;
+	background-image: url('../img/sample.png');
+	background-size: 70px 40px;
+	background-repeat: none;
+	float: left;
+	margin: 5px;
+}
+
+
+#main_menu {
+	float: right;
+	list-style-type: none;
+	text-align: center;
+	margin-right: 5px; 
+}
+
+#main_menu li {
+	display: inline;
+}
+
+/* #main_menu li a:hover */
+.menu-btn
+{
+	text-decoration: none;
+	padding: 5px 10px;
+	color: #fff;
+	background-color: #002DB3;
+}
+
+/* #main_menu li a:hover */
+.menu-btn:hover
+{
+	color: #fff;
+	background-color: #D9D900;
+}
+
+#services_container {
+	display: table;
+	width: 600px;
+	/* height: 200px; 
+	background-color: #eee;*/
+}
+
+/* #services_container div */
+.service-tiles {
+	/* display: inline-block; */
+	float: left;
+	# border: 1px solid red;
+	margin: 6px;
+	width: 125px;
+	padding: 5px;
+}
+
+.service-tiles p {
+	font-size: 10px;
+}
+
+.paragraph-img {
+	padding: 10px;
+}
+
+#paragraph_img {
+	float: left;
+}
+
+
+#blog_container {
+	display: table;
+	width: 600px;
+	background-color: #eee;
+}
+
+.blog-post-tiles {
+	float: left;
+	border: 1px solid #00f;
+	margin: 6px;
+	width: 285px;
+	padding: 0px;
+}
+
+.post-logo {
+	width: 100%;
+	height: 90px;
+}
+
+.blog-post-tiles:hover {
+	background-color: #ddd;
+}
+
+.post-text-container {
+	margin: 0px 10px 10px 10px;
+}
+
+.post-text-container h3 {
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+		
+#footer {
+	display: table;
+	width: 600px;
+	background-color: #353526;
+	color: #fff;
+	clear: both;
+	/* margin: 0 auto; */
+	margin-left: auto;
+	margin-right: auto;
+}
+		
+.footer-list-item {
+	text-decoration: none;
+	padding: 5px 10px;
+	color: #fff;
+}
+
+.footer-list-item:hover
+{
+	color: #FFBF00;
+}
+
+#footer_main_menu {
+	float: left;
+	list-style-type: none;
+	width: 20%;
+	padding-left: 20px;
+}
+
+#footer_main_menu li {
+	padding-bottom: 8px;
+}
+
+#footer_events_list {
+	float: left;
+	width: 43%;
+	padding-left: 30px;
+	# list-style-type: none;
+}
+		
+#philosophy_text {
+	float: left; 
+	width: 22%;
+	padding-left: 20px;
+}
+
+#philosophy_text h4 {
+	margin: 15px 0 10px;
+}
+
+#philosophy_text p {
+	font-size: 12px;
+}

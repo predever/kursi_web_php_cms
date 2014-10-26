@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang='sq'>
+<head>
+	<meta charset="UTF-8" /> 
+	<title>
+		ETIK.al - Kontakti
+	</title>
+	<link href="css/stilimi.css" type="text/css" rel="stylesheet" />
+	
+	<style>
+		
+		/* top header section */
+		#header {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			height: 50px;
+		}
+		
+		/* header content in order to make the fixed possition possible */
+		#header_content {
+			width: 600px;
+			position: fixed;
+			background-color: #000000;
+		}
+		
+		#base {
+			width: 600px;
+			background-color: #EEEEEE;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		#main_logo {
+			width: 70px;
+			height: 40px;
+			background-color: #00238C;
+			background-image: url('img/sample.png');
+			background-size: 100px 40px;
+			background-repeat: none;
+			float: left;
+			margin: 5px;
+		}
+		
+		#main_menu {
+			float: right;
+			list-style-type: none;
+			text-align: center;
+			margin-right: 5px; 
+		}
+		
+		#main_menu li {
+			display: inline;
+		}
+		
+		/* #main_menu li a:hover */
+		.menu-btn
+		{
+			text-decoration: none;
+			padding: 5px 10px;
+			color: #fff;
+			background-color: #036;
+		}
+
+		/* #main_menu li a:hover */
+		.menu-btn:hover
+		{
+			color: #fff;
+			background-color: #369;
+		}
+		
+		#footer {
+			display: table;
+			width: 600px;
+			background-color: #353526;
+			color: #fff;
+			clear: both;
+			margin: 0 auto;
+		}
+				
+		.footer-list-item {
+			text-decoration: none;
+			padding: 5px 10px;
+			color: #fff;
+		}
+
+		.footer-list-item:hover
+		{
+			color: #FFBF00;
+		}
+		
+		#footer_main_menu {
+			float: left;
+			list-style-type: none;
+			width: 20%;
+			padding-left: 20px;
+		}
+		
+		#footer_main_menu li {
+			padding-bottom: 8px;
+		}
+		
+		#footer_events_list {
+			float: left;
+			width: 43%;
+			padding-left: 30px;
+			# list-style-type: none;
+		}
+				
+		#philosophy_text {
+			float: left; 
+			width: 22%;
+			padding-left: 20px;
+		}
+		
+		#philosophy_text h4 {
+			margin: 15px 0 10px;
+		}
+		
+		#philosophy_text p {
+			font-size: 12px;
+		}
+		
+		#main_form {
+			padding: 30px;
+		}
+		
+		#main_form > label {
+			display: inline-block; 
+			width: 100px; 
+			text-align: right;
+			vertical-align: top;
+		}
+		
+		
+	</style>
+	
+</head>
+<body>
+
+	<div id="header">
+		<div id="header_content">
+			<div id="main_logo">
+			</div>
+			
+			<ul id="main_menu">
+				<li><a class="menu-btn" href="#kreu">KREU</a></li>
+				<li><a class="menu-btn" href="">RRETH NESH</a></li>
+				<li><a class="menu-btn" href="">EVENTE</a></li>
+				<li><a class="menu-btn" href="">BLOG</a></li>
+				<li><a class="menu-btn" href="">KONTAKT</a></li>
+			</ul>	
+		</div>		
+	</div>
+	
+	<div id="base">
+		
+		<h2>
+			<center>HTML Forms</center>
+		</h2>
+		
+		<form id="main_form" action="http://localhost/etik/test_form.php" method="POST">
+			<label for="first_name">Emri</label>
+			<input id="first_name" type="text" name="first_name" placeholder="Kutia e Emrit"><br><br>
+			<label for="last_name">Mbiemri</label>
+			<input id="last_name" type="text" name="last_name"><br><br>
+			<label for="pass_input">Password</label>
+			<input id="pass_input" type="password" name="pass_input"><br>
+			<hr/>
+			<label for="description">Pershkrimi</label>
+			<textarea id="description" rows="5" cols="15" name="description">Vlera e kutise</textarea><br>
+			<fieldset>
+				<legend>Fusha:</legend>
+				<input id="field_it" type="checkbox" name="field_it">
+				<label for="field_it">IT</label><br>
+				<input id="field_developer" type="checkbox" name="field_developer">
+				<label for="field_developer">Software Dev.</label><br>
+				<input id="field_dba" type="checkbox" name="field_dba">
+				<label for="field_dba">DBA</label><br>
+			</fieldset><br>
+			<fieldset>
+				<legend>Gjinia:</legend>
+				<input id="sex_f" type="radio" name="sex_radio">
+				<label for="sex_f">Femer</label><br>
+				<input id="sex_m" type="radio" name="sex_radio">
+				<label for="sex_m">Mashkull</label><br>
+			</fieldset>
+			<br>
+			<label for="opt_select_combo">Select Combo</label>
+			<select id="opt_select_combo" name="opt_select_combo">
+				<option value="one">Opsioni 1</option>
+				<option value="two">Opsioni 2</option>
+				<option value="three">Opsioni 3</option>
+				<option value="four">Opsioni 4</option>
+			</select><br><br>
+			
+			<label for="opt_select_list">Select List</label>
+			<select id="opt_select_list" name="opt_select_list" size="4">
+				<option value="one">Opsioni 1</option>
+				<option value="two">Opsioni 2</option>
+				<option value="three">Opsioni 3</option>
+				<option value="four">Opsioni 4</option>
+			</select><br>
+			
+			<input id="some_hidden_value" type="hidden" name="some_hidden_value">
+			<hr>
+			<input type="submit" name="form_submit" value="Submit">			
+		</form>
+
+	</div>
+
+	<div id="footer">
+		<ul id="footer_main_menu">
+			<li><a class="footer-list-item" href="">KREU</a></li>
+			<li><a class="footer-list-item" href="">RRETH NESH</a></li>
+			<li><a class="footer-list-item" href="">EVENTE</a></li>
+			<li><a class="footer-list-item" href="">BLOG</a></li>
+			<li><a class="footer-list-item" href="">KONTAKT</a></li>
+		</ul>
+		<ul id="footer_events_list">
+			<li><a class="footer-list-item" href="">natus error sit voluptatem accusantium</a></li>
+			<li><a class="footer-list-item" href="">accusantium doloremque laudantium</a></li>
+			<li><a class="footer-list-item" href="">totam rem aperiam, eaque ipsa quae</a></li>
+			<li><a class="footer-list-item" href="">rem aperiam, eaque ipsa quae</a></li>
+			<li><a class="footer-list-item" href="">Sed ut perspiciatis unde omnis</a></li>
+		</ul>
+		<div id="philosophy_text">
+			<h4>Filozofia</h4>
+			<p>
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+			</p>
+		</div>
+	</div>
+	
+</body>
+</html>

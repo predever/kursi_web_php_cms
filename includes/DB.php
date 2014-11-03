@@ -37,6 +37,12 @@ class DB {
 		return $this->_mysqli;
 	}
 
+	// Get mysqli connection
+	public function getError() 
+	{
+		return $this->_mysqli->error;
+	}
+
 	/* ASSOCIATED WITH "query()" METHOD
 		FUNCTIONS:
 		->fetch_assoc();

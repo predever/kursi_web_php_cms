@@ -1,0 +1,14 @@
+Plani:
+------
+- ristrukturimi i dokumentave
+	- includes
+	- header/footer
+	- redirect
+- krijimi i dokumentave me funksione te pergjithshme HELPERS
+	- display message
+	- centralizim i kontrollit per "restricted areas"
+		- nje funksion qe kontrollon nese ka user te loguar dhe nese eshte admin
+- ndarja e llogjikes nga paraqitja
+	- te krijohet nga nje file per cdo veprim ne PHP 
+	  si psh: ruajtjet nga nje form submit
+- limiti i rreshtave

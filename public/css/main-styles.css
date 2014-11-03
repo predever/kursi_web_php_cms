@@ -1,0 +1,102 @@
+body {
+	margin: 0px;
+	padding: 60px 0px;
+	background-color: #f8f8f8;
+	height: 100%;
+}
+
+.base {
+	padding: 10px 30px 40px 30px !important;
+	border: 1px solid rgba(0, 0, 0, 0.35);
+	/* border-top: none; */
+	border-radius: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.service-tiles  {
+    margin-bottom: 20px;
+    text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.35);
+	/* border-top: none; */
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+
+.blog-post-tiles {
+	float: left;
+	border: 1px solid #00f;
+	margin: 6px;
+	padding: 0px;
+	width: 100%;
+}
+
+.post-logo {
+	width: 100%;
+	height: 90px;
+}
+
+.blog-post-tiles:hover {
+	background-color: #ddd;
+}
+
+.post-text-container {
+	margin: 0px 10px 10px 10px;
+}
+
+.post-text-container h3 {
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+	
+	
+		
+#footer {
+	display: table;
+	background-color: #353526;
+	color: #fff;
+	margin-top: 20px;
+}
+		
+.footer-list-item {
+	text-decoration: none;
+	padding: 5px 10px;
+	color: #fff;
+}
+
+.footer-list-item:hover
+{
+	color: #FFBF00;
+}
+
+#footer_main_menu {
+	float: left;
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+#footer_main_menu li {
+	padding-bottom: 8px;
+}
+
+#footer_events_list {
+	float: left;
+	width: 43%;
+	padding-left: 30px;
+	# list-style-type: none;
+}
+		
+#philosophy_text {
+	float: left; 
+	width: 22%;
+	padding-left: 20px;
+}
+
+#philosophy_text h4 {
+	margin: 15px 0 10px;
+}
+
+#philosophy_text p {
+	font-size: 12px;
+}

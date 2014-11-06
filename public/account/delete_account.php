@@ -1,46 +1,40 @@
 <?php
 	
-
-	require_once 'DB.php';
-
-	//ON LOGIN SUBMIT
-	if(isset($_GET['user_id']))
+	require_once '../../includes/helpers.php';
+	require_once '../../includes/DB.php';
+	
+	$loggedInUser = checkLoggedInUser();
+	
+	if($loggedInUser->isLoggedIn && $loggedInUser->isAdmin)
 	{
-		/*echo $_POST['first_name'];
-		echo $_POST['last_name'];
-		echo $_POST['hidden_user_id'];*/
-
-		$db = new DB();
-
-		$username = $db->escape($_POST['username']);
-		$firstName = $db->escape($_POST['first_name']);
-		$lastName = $db->escape($_POST['last_name']);
-		
-		
-		$sql = "SELECT user_id
-				FROM USER
-				WHERE username = '$username'
-				Limit 1";
-
-		$existingUser = $db->select($sql);
-		if(count($existingUser)>0)
+		if(isset($_GET['user_id']))
 		{
-			echo "username exists";
+			$db = new DB();
+
+			$userID = $db->escape($_GET['user_id']);
+
+			$sql = "SELECT *
+					FROM USER
+					WHERE user_id = $userID
+					Limit 1";
+
+			$existingUser = $db->select($sql);
+			if(count($existingUser)>0)
+			{
+				$sql = "DELETE FROM user 
+						WHERE user_id = $userID";
+				
+				if(!$db->query($sql)){
+			      die('error');
+			    }
+
+			    gotolink('/users.php');
+			}
+			else
+			{
+				echo "user doesn't exist";
+				exit();
+			}
 		}
-		else
-		{				
-			//try {
-			$currentDate = date("Y-m-d H:i:s");
-			$sql = "DELETE FROM user WHERE user_id=1";
-			
-			if(!$db->query($sql)){
-				var_dump($db->getConnection()->error);
-		    	echo 'error';
-		    }
-
-		}
-
-
 	}
-
 ?>

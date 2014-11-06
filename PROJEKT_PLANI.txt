@@ -1,0 +1,85 @@
+
+>> PROJEKT PLANI <<
+^^^^^^^^^^^^^^^^^^^
+
+PARAQITJA (FAQET):
+------------------
+ + Kreu
+	- header
+		> Pershendetje e perdoruesit te loguar si link 
+		> menuja kryesore
+	- sidebar
+		> kategorite
+		> tags (etiketa)
+	- body
+		> lista e 10 postimeve te fundit
+	- footer
+
+ + Login
+	- body
+		> log-in form
+
+ + Llogaria Ime
+	- header
+	- body
+		> detajet e llogarise
+		> EDIT-VIEW
+			~ inputs per cdo detaj qe te modifikohet
+	- footer
+
+ + Faqja per Admin 
+	- header
+	- body
+		> Lista e Perdoruesve
+			~ Krijo/Modifiko/Fshij 
+		> EDIT-VIEW per perdoruesin e zgjedhur nga lista
+			~ inputs per cdo detaj qe te modifikohet
+	- footer
+
+ + Detajet e Postimit
+	- header
+	- body
+		> Permbajtja
+		> MODIFIKO (per Krijuesin ose ADMIN-in)
+		> EDIT-VIEW te postimit
+			~ inputs per cdo detaj qe te modifikohet
+	- footer
+
+===========================================================
+
+DETAJE TEKNIKE:
+---------------
+
+AKSESI
+------
++ PUBLIC
+	- Faqja Kryesore
+	- Detajet e Postimit
++ RESTRICTED
+	- Hyrja ne llogari
+	- Lista e perdoruesve
+	- Modifikimi i perdoruesve
+	- Modifikimi i postimeve
+
+~~~~~~~~~~~~~~~~~~
++ Perdoruesit kane nivel aksesi
+	- Admin (krijimi perdoruesish dhe postimesh, si dhe modifikim postimesh krijuar nga tjere)
+	- Krijues (mund te aksesoje vetem detajet e veta dhe postimet e krijuara)
+
++ Postimet kane kategori
+	- liste hierarkike (prind-femije)
+	- krijohen dinamikisht me ajax tek nderfaqja e postimit
+	- postimi mund te kete disa kategori te caktuara
+
++ Postimet kane etiketa (tags)
+	- etiketat krijohen si fjale kyce qe 
+	  ndahen me presje ne nje input te vetem 
+
++ Postimet kane nje lloj
+	- postimeve u caktohet nje lloj qe eshte i para-caktuar 
+	  ne data-baze dhe nuk mund te shtohen tjere
+	  psh: Artikull, Njoftim, Ngjarje
+	  
+
+
+

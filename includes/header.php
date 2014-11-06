@@ -45,8 +45,9 @@
             <li><a href="<?php echo SITE_ROOT; ?>posts.php">Postimet</a></li>
 
             <?php  if(isset($_SESSION['user_id'])):  ?>
+        <li><a href="<?php echo SITE_ROOT; ?>/users.php">Perdoruesit</a></li>
 				<li><a href="<?php echo SITE_ROOT; ?>account.php"> Hej <b><?php echo ucwords($_SESSION['firstname']); ?></b></a></li>            	
-				<li><a href="<?php echo SITE_ROOT; ?>logout.php">Dil</a></li>            	
+				<li><a href="<?php echo SITE_ROOT; ?>logout.php">Dil</a></li>  
             <?php  else:  ?>
 				<li><a href="<?php echo SITE_ROOT; ?>login.php">Hyr ne Llogari</a></li>
             <?php  endif; ?>

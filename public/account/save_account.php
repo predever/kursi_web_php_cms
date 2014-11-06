@@ -8,19 +8,22 @@
 	if($loggedInUser->isLoggedIn && $loggedInUser->isAdmin)
 	{
 		//ON LOGIN SUBMIT
-		if(isset($_POST['save_acc_derails']))
+		if(isset($_POST['save_acc_details']))
 		{
-			/*echo $_POST['first_name'];
-			echo $_POST['last_name'];
-			echo $_POST['hidden_user_id'];*/
-
 			$db = new DB();
 
 			$userID = $db->escape($_POST['hidden_user_id']);
-			$firstName = $db->escape($_POST['first_name']);
-			$lastName = $db->escape($_POST['last_name']);
+			$firstname = $db->escape($_POST['firstname']);
+			$lastname = $db->escape($_POST['lastname']);
+			$description = $db->escape($_POST['description']);
+			$email = $db->escape($_POST['email']);
+
+			$active = $db->escape($_POST['active_chbox']);			
+			$active = (isset($active) && $active != "")? 1 : 0;
+
+			$id_role = $db->escape($_POST['id_role']);
 			
-			
+
 			$sql = "SELECT *
 					FROM USER
 					WHERE user_id = $userID
@@ -30,8 +33,12 @@
 			if(count($existingUser)>0)
 			{
 				$sql = "UPDATE user SET 
-						firstname = '$firstName',
-						lastname = '$lastName'
+						firstname = '$firstname'
+						, lastname = '$lastname'
+						, description = '$description'
+						, email = '$email'
+						, active = $active
+						, id_role = $id_role
 						WHERE user_id = $userID";
 
 				if(!$db->query($sql)){
@@ -40,7 +47,7 @@
 
 			    if(isset($_POST['return_url']) && $_POST['return_url'] == 'users')
 			    {
-					gotolink('/account/users.php');
+					gotolink('/users.php');
 			    }
 			    else
 			    {

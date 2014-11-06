@@ -1,4 +1,7 @@
-<?php	
+<?php
+
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);
+	
 	//session_start();
 	define('SITE_ROOT', '/web_php_cms/public/');
 

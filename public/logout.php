@@ -4,5 +4,5 @@
 	unset($_SESSION['firstname']);
 	unset($_SESSION['username']);
 
-	header('Location: http://localhost/web_php_cms/public/index.php');
+	header('Location: http://localhost/web_php_cms/public/login.php');
 ?>

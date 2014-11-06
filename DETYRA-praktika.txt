@@ -1,0 +1,31 @@
+HOME PAGE:
+	- Pema e Kategorive
+	- Lista e 10 postimeve te fundit
+	- button shiko me shume (qe tek faqja e postimeve) 
+
+FAQJA E ARTIKUJVE (posts)
+	- Pema e Kategorive
+
+	+ Filtra 
+		- kerkim (mbi titullin dhe permbajtjen)
+		- autori
+		- renditje (dropdown sipas nje fushe)
+
+	+ Lista e Postimeve
+		- Autori (inner join)
+		- Logo
+		- Titulli
+		- Permbajtja
+
+	+ Levizja me faqe
+		- para 
+		- mbrapa
+		- faqja aktuale
+
+FAQJA E ARTIKULLIT TE PLOTE (DETAJET)
+	- shfaqja e te gjithe informacionit
+
+MODIFIKIMI
+	- nga llogaria personale mund te hapen postimet e mia
+	- nga lista e postimeve te krijuar nga une mund te hapi formularin e modifikimit
+	- formular krijimi

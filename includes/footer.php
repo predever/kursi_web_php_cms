@@ -1,3 +1,6 @@
+<?php 
+  require_once 'helpers.php';
+?>
 	<!--  body content end -->
 	</div><!-- ending BASE div tag-->
 </div><!-- ending CONTAINER div tag-->
@@ -9,7 +12,7 @@
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
+<script src="<?php echo SITE_ROOT; ?>js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script src="<?php echo SITE_ROOT; ?>js/bootstrap.min.js"></script>
 

@@ -110,7 +110,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav" style="float: right;">
-            <li class="active"><a href="<?php echo SITE_ROOT ?>main.php">Kreu</a></li>
+            <li class="active"><a href="<?php echo SITE_ROOT ?>index.php">Kreu</a></li>
             <li><a href="<?php echo SITE_ROOT ?>posts.php">Postimet</a></li>
           </ul>
         </div><!--/.nav-collapse -->

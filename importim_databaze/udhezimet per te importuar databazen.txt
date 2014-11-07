@@ -1,0 +1,16 @@
+1.  Nga browseri duhet hapur faqja:
+	http://localhost/phpmyadmin
+	shih: fig1.png
+
+2.  Ne listen majtas ndodhen Databazat, 
+    nese nuk shikoni te listuar "etik_cms" si ne fig2.png duhet ta krijoni
+	shih figuren fig3.png (zgjedhni tab-in "Databases" dhe vendosni emrin "etik_cms" dhe klikoni butonin "create")
+
+3.  Pasi te jete krijuar databaza "etik_cms", selektojeni ate dhe pastaj klikoni tab-in SQL si ne fig4.png
+
+4.  hapni dokumentin "etik_cms_061114.sql" dhe kopjoni te gjithe permbajtjen e tij
+    pastaj kalojeni me 'paste' ne kutine poshte SQL shih fig5.png
+    kur ta keni kaluar kodin ne kuti klikoni butonin "Go" ne pjesen e poshtme djathtas
+
+5.  Ne listen e databazave kontrolloni nese jane krijuar tabelat nen databazen "etik_cms"
+    ashtu si ne fig6.png, nese jo beni refesh faqes 

@@ -1,3 +1,6 @@
+
+(shenim: per te importuar databazen shikon nen folderin "importim_databaze" per udhezime)
+
 HOME PAGE:
 	- Pema e Kategorive
 	- Lista e 10 postimeve te fundit
@@ -29,3 +32,4 @@ MODIFIKIMI
 	- nga llogaria personale mund te hapen postimet e mia
 	- nga lista e postimeve te krijuar nga une mund te hapi formularin e modifikimit
 	- formular krijimi
+
